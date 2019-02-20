@@ -1,0 +1,15 @@
+<main>
+  <div *ngFor="let new of news">
+    <h3>{{ new.title }}</h3>
+    <img src="{{new.urlToImage}}" alt="" srcset="">
+    <p>{{ new.description }}</p>
+    <a href="{{new.url}}">URL</a>
+  </div>
+  <div class="container">
+    <div class="row">
+      <h2 class="text-center col-12">
+          NAM
+      </h2>
+    </div>
+  </div>
+</main>
