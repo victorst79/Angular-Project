@@ -1,12 +1,13 @@
-<main>
-  <!-- <div class="card-deck"> -->
-    <div *ngFor="let new of news"class="card" style="width: 18rem;">    
+<main class="container">
+  <div class="row card-contain text-center m-auto">
+    <!-- GENERATION OF CARDS -->
+    <div *ngFor="let new of news" class="card col-md-4 col-12 text-center mt-4" style="width: 18rem;">    
       <img class="card-img-top" src="{{new.urlToImage}}" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title">{{ new.title }}</h5>
         <p class="card-text">{{ new.description }}</p>
-        <a href="{{new.url}}" class="btn btn-primary">Go to Article</a>
+        <a href="{{new.url}}" class="btn btn-primary" target="_blank">Go to Article</a>
       </div>
     </div>
-  <!-- </div> -->
+  </div>
 </main>
