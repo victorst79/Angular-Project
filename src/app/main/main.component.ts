@@ -7,10 +7,9 @@ import { NewsService } from '../news.service';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements OnInit {
-  public news;
 
   constructor(private newsApi: NewsService) { 
-    this.news = this.newsApi.getNews();
+    // this.news = this.newsApi.getNews();
   }
 
   ngOnInit() {

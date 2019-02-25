@@ -13,10 +13,7 @@ export class NewsService {
     // NEWS IN SPAIN
     this.http.get("https://newsapi.org/v2/everything?q=spain&apiKey=6d27df976d434e2e992f6ce34e4f9989")
     .subscribe(data => {
-      var aux = data["articles"];
-      for(let i = 0; i <= aux.length-1; i++){
-        this.news.push(aux[i]);
-      }
+       this.news = (data["articles"]);
     });
   }
   
