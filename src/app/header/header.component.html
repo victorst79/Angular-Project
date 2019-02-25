@@ -1,8 +1,24 @@
 <header>
     <nav class="navbar navbar-light bg-light">
         <a class="navbar-brand" href="#">
-          <img src="/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+          <img src="../../assets/images/news.png" width="30" height="30" class="d-inline-block align-top" alt="">
           Angular News
         </a>
+        <!-- <div class="navbar-collapse"> -->
+          <ul class="navbar-nav mr-auto flex">
+            <li class="nav-item">
+              <a routerLink="spain">Spain</a>
+            </li>
+            <li class="nav-item">
+              <a routerLink="uk">UK</a>
+            </li>
+            <li class="nav-item">
+              <a routerLink="france">France</a>
+            </li>
+          </ul>
+        <!-- </div> -->
+        <span class="icon-theme" (click)="changeTheme()">
+          <img src="../../assets/images/theme.png" alt="" srcset="">
+        </span>
       </nav>
 </header>

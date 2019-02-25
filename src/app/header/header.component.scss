@@ -1,0 +1,27 @@
+nav{
+    
+    li{
+        margin: 0px 10px;
+        a{
+            text-decoration: none;
+            color: black;
+            &:hover{
+                color: #be322c;
+            }
+        }
+    }
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: row;
+        padding-left: 25px;
+        margin-bottom: 0;
+        list-style: none;
+    }
+
+    .icon-theme{
+        img{
+            width: 20px;
+        }
+    }
+}
