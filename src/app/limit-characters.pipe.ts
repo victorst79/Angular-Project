@@ -6,7 +6,10 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class LimitCharactersPipe implements PipeTransform {
 
   transform(value: any, args?: any): any {
-    return null;
+    console.log(value);
+    value = value.substr(0, 80);
+    value += '...';
+    return value;
   }
 
 }

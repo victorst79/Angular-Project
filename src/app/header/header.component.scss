@@ -1,10 +1,19 @@
 nav{
-    
+    background-color: #212121 !important;
+    color: white !important;
+
+    a{
+        color: white;
+        &:hover{
+            color: #be322c;
+        }
+    }
+
     li{
         margin: 0px 10px;
         a{
             text-decoration: none;
-            color: black;
+            color: white;
             &:hover{
                 color: #be322c;
             }

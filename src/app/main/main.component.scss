@@ -1,10 +1,14 @@
-main{
+section{
     .card-contain{
         // display: flex;
     }
 
+    .btn-primary{
+        background-color: #be3237;
+        border-color: #be3237;
 
-    .dark-theme{
-        background-color: rgb(53, 53, 53);
+        &:hover{
+            background-color: #be3237c2;
+        }
     }
 }

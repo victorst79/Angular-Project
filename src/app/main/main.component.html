@@ -1,4 +1,4 @@
-<main>
+<section>
   <div class="container">
     <div class="row card-contain text-center m-auto">
         <!-- GENERATION OF CARDS -->
@@ -6,10 +6,10 @@
           <img class="card-img-top" src="{{new.urlToImage}}" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">{{ new.title }}</h5>
-            <p class="card-text">{{ new.description | limitCharacters}}</p>
+            <p class="card-text">{{ new.description | limitCharacters }}</p>
             <a href="{{new.url}}" class="btn btn-primary" target="_blank">Go to Article</a>
           </div>
         </div>
       </div>
   </div>  
-</main>
+</section>
