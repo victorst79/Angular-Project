@@ -6,43 +6,30 @@ import { HttpClient } from '@angular/common/http';
 })
 
 export class NewsService {
-  public spainNews = [];
-  public ukNews = [];
-  public franceNews = [];
+  public news = [];
 
-  constructor(private http: HttpClient) {
-    
-    // NEWS IN SPAIN
-    this.http.get("https://newsapi.org/v2/everything?q=spain&apiKey=6d27df976d434e2e992f6ce34e4f9989")
-    .subscribe(data => {
-       this.spainNews = (data["articles"]);
-    });
-
-    // NEWS IN UK
-    this.http.get("https://newsapi.org/v2/everything?q=uk&apiKey=6d27df976d434e2e992f6ce34e4f9989")
-    .subscribe(data => {
-       this.ukNews = (data["articles"]);
-    });
-
-    // NEWS IN FRANCE
-    this.http.get("https://newsapi.org/v2/everything?q=france&apiKey=6d27df976d434e2e992f6ce34e4f9989")
-    .subscribe(data => {
-       this.franceNews = (data["articles"]);
-    });
-  }
-  
+  constructor(private http: HttpClient) { }
   // RETURN SPAIN NEWS
   getSpainNews() {
-    return this.spainNews;
+    this.http.get('https://newsapi.org/v2/everything?q=spain&apiKey=6d27df976d434e2e992f6ce34e4f9989')
+    .subscribe(data => {
+       this.news = (data['articles']);
+    });
   }
 
   // RETURN UK NEWS
   getUkNews() {
-    return this.ukNews;
+    this.http.get('https://newsapi.org/v2/everything?q=uk&apiKey=6d27df976d434e2e992f6ce34e4f9989')
+    .subscribe(data => {
+       this.news = (data['articles']);
+    });
   }
 
   // RETURN FRANCE NEWS
   getFranceNews() {
-    return this.franceNews;
+    this.http.get('https://newsapi.org/v2/everything?q=france&apiKey=6d27df976d434e2e992f6ce34e4f9989')
+    .subscribe(data => {
+       this.news = (data['articles']);
+    });
   }
 }

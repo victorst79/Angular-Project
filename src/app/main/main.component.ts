@@ -13,22 +13,20 @@ export class MainComponent implements OnInit {
   constructor(private newsApi: NewsService, private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
-    console.log(this.activatedRoute.snapshot['_routerState'].url); 
     var url = this.activatedRoute.snapshot['_routerState'].url;
-
     // ROUTING CASE
-    switch(url) {
-      case "/spain":
-        this.news = this.newsApi.getSpainNews();
+    switch (url) {
+      case '/spain':
+       this.newsApi.getSpainNews();
         break;
-      case "/uk":
-        this.news = this.newsApi.getUkNews();
+      case '/uk':
+        this.newsApi.getUkNews();
         break;
-      case "/france":
-        this.news = this.newsApi.getFranceNews();
-        break; 
+      case '/france':
+        this.newsApi.getFranceNews();
+        break;
       default:
-        this.news = this.newsApi.getSpainNews();
-    } 
+        this.newsApi.getSpainNews();
+    }
   }
 }

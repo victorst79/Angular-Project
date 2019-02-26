@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { $ } from 'protractor';
 
 @Component({
   selector: 'app-header',
@@ -7,15 +6,15 @@ import { $ } from 'protractor';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  public style = false;
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  changeTheme(){
-    return (this.style = !this.style);
+  changeTheme() {
+    console.log('Change theme');
+    console.log(document.getElementsByTagName('body')[0].style.background = 'black');
   }
 
 }
