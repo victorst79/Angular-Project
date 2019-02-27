@@ -10,7 +10,7 @@ export class DetailsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log("DETAILS");
+    console.log('DETAILS');
   }
 
 }
