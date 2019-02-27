@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row card-contain text-center m-auto">
         <!-- GENERATION OF CARDS -->
-        <div *ngFor="let new of newsApi.news" class="card col-md-4 col-12 text-center mt-4" style="width: 18rem;">    
+        <div *ngFor="let new of newsApi.news" class="card col-md-4 col-12 text-center mt-4" style="width: 18rem;">
           <img class="card-img-top" src="{{new.urlToImage}}" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">{{ new.title }}</h5>
