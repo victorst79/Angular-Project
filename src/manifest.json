@@ -1,10 +1,11 @@
 {
-  "name": "angular-project",
-  "short_name": "angular-project",
+  "name": "angular-news",
+  "short_name": "angular-news",
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
   "display": "standalone",
   "scope": "/",
+  "related_aplications": "",
   "start_url": "/",
   "icons": [
     {
